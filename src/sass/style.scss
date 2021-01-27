@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap";
+$color-dark:rgb(34, 32, 32);
+$color-withe:#FFF;
+
+* {box-sizing: border-box;}
+
+body {
+  background-color: $color-dark;
+  h1, h2, h3, h4, p {
+    color: $color-withe;
+  }
+  a:hover, a:visited, a:link, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.main-title {
+  color: #d20a32;
+  font-size: 3.5em;
+}
+
+/*Searchbar*/
+.search-container {
+  float: right;
+  button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background: #ccc;
+    }
+  }
+  input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+}
+
+/*PageList*/
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  border: none;
+  background-color: $color-dark;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: $color-withe;
+  text-align: left;
+}
